@@ -120,6 +120,9 @@ $(document).ajaxStop(function () {
 });
 
 $(document).on("pagecreate", "#principal", function() {
+
+    navigator.geolocation.getCurrentPosition(alert(e));
+
     consultar_sucursales(
         mostrar_sucursales,
         {
